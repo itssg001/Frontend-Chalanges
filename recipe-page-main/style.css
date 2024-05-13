@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+}
+:root{
+   --head-size:32px;
+   --sub-head-size:26px;
+   --para:13px;
+   --primary-font-color:black;
+   --secondary-font-color:rgb(255, 148, 71);
+}
+
+@font-face {
+    font-family:sub-head ;
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family:head;
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+   
+    .main{
+        background-color:white;
+        border: 1px solid black;
+        width: 50%;
+        min-height: 100vh;
+        border-radius: 16px;
+        padding: 10px;
+          img{
+                height: 100%;
+                width: 100%;
+                border-radius: 12px;
+            }
+        
+            h1{
+                font-family:head;
+                font-size: var(--head-size);
+                font-weight: 200;
+            }
+
+            p{
+                font-family:sub-head;
+                font-size: 12px;
+                color: rgb(84, 84, 84);
+                
+            }
+
+            .prep-time{
+                width: 100%;
+                background-color: rgb(248, 240, 255);
+                padding: 10px;
+                border-radius: 12px;
+                margin-top: 25px;
+
+                h2{
+                    font-size: 20px;
+                    font-family: sub-head;
+                    font-weight: 400;
+                    color: rgb(205, 151, 255);
+                    margin-bottom: 8px;
+                }
+                ul{
+                    li{
+                        margin-top: 8px;
+                        margin-bottom: 8px;
+                        color: rgb(91, 91, 91);
+                        font-family: sub-head;
+
+                    }
+                }
+            }
+
+         .ingredients{
+            h1{
+                font-size: var(--sub-head-size);
+                margin-top: 8px;
+                margin-bottom: 8px;
+                color: rgb(152, 95, 49);
+             }
+
+             ul{
+
+                li{
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                    color: rgb(180, 144, 115) ;
+                    font-family: sub-head;
+                    font-size:var(--para);
+                }
+             }
+         }
+
+
+         .instructions{
+
+            h1{
+                font-size: var(--sub-head-size);
+                margin-top: 8px;
+                margin-bottom: 8px;
+                color: rgb(152, 95, 49); 
+            }
+
+            ol{
+
+                li{
+                    margin-top: 8px;
+                    margin-bottom: 8px;
+                    color: rgb(180, 144, 115) ;
+                    font-family: sub-head;
+                    font-size:var(--para);  
+                }
+            }
+         }
+         
+         .nutrition-tabel{
+
+            h1{
+                font-size: var(--sub-head-size);
+                margin-top: 8px;
+                margin-bottom: 8px;
+                color: rgb(152, 95, 49);   
+            }
+            p{
+                font-family:sub-head;
+                font-size: 12px;
+                color: rgb(83, 77, 77);
+                
+            }
+
+            table{
+                width: 100%;
+                margin-bottom: 10px;
+                tr{
+                    width: 100%;
+                    td{
+                        padding: 10px;
+                        width: 200px;
+                        border-bottom: 1px solid rgb(112, 112, 112);
+                        color: rgb(133, 124, 124);
+                    }
+
+                    span{
+                        color: rgb(152, 95, 49);  
+                        font-family: sub-head;
+                        font-weight: 400;
+                    }
+                }
+            }
+         }
+    }
+}
