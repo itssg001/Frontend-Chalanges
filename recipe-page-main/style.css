@@ -34,7 +34,6 @@ body{
    
     .main{
         background-color:white;
-        border: 1px solid black;
         width: 50%;
         min-height: 100vh;
         border-radius: 16px;
@@ -162,3 +161,78 @@ body{
          }
     }
 }
+
+@media only screen and (max-width: 767px) {
+   .container{
+    .main{
+        border-radius: 0;
+        padding: 6px;
+        
+        img{
+            border-radius: 0px;
+        }
+        h1{
+            font-size: 16px;
+            margin: 4px;
+        }
+        p{
+            font-size: 12px;
+            margin: 4px;
+        }
+
+
+        .prep-time{
+            h2{
+              font-size: 14px;
+          }
+          ul{
+              li{
+                font-size: 8px;  
+              }
+          }
+              
+          }
+
+          .ingredients{
+            h1{
+                font-size: 14px;
+            }
+            ul{
+                li{
+                    font-size: 8px;
+                }
+            }
+          }
+
+          .instructions{
+            h1{
+                font-size: 14px;
+
+            }
+            ol{
+                li{
+                    font-size: 8px;
+                }
+            }
+          }
+
+          .nutrition-tabel{
+            h1{
+                font-size: 14px;
+            }
+            p{
+                font-size: 9px;
+            }
+            td{
+                font-size: 8px;
+            }
+            span{
+              font-size: 8px;  
+            }
+          }
+    }
+
+ 
+   }
+  }
+  
