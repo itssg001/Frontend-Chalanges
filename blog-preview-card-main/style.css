@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+   
+}
+:root{
+    --primary-color:hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --font-size:16px;
+}
+.main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+
+    .card-container{
+        height: 350px;
+        width: 250px;
+        border: 1px solid var(--Black);
+        padding: 10px;
+        border-radius: 12px;
+        background-color: var(--White);
+        box-shadow: 10px 10px 2px;
+        
+        img{
+            width: 100%;
+            border-radius: 8px;
+        }
+        button{
+            background-color: var(--primary-color);
+            width: 60px;
+            text-align: center;
+            padding: 4px;
+            border-radius: 4px;
+            margin-top: 8px;
+            font-family: "Figtree";
+            font-size: 10px;
+            border: none;
+            outline: none;
+        }
+        h3{
+            font-size:12px;
+            font-weight: 500;
+            margin-top: 12px;
+            font-family: "Figtree";
+        }
+        h1{
+            font-size: var(--font-size);
+            font-weight: 800;
+            font-family: "Figtree";
+            margin-top: 10px;
+
+            &:hover{
+                color: var(--primary-color);
+                cursor: pointer;
+            }
+        }
+        p{
+            font-size: 12px;
+            font-family: "Figtree";
+            margin-top: 8px;
+        }
+        .user{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            gap: 8px;
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+
+            img{
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+            }
+
+            p{
+                font-size: 14px;
+                font-family: "Figtree";
+                color: var(--Black);
+                font-weight: 800;
+            }
+        }
+    }
+}
